@@ -1,1 +1,1 @@
-export {default} from '@ktam/lint-node/eslint';
+export { default } from '@ktam/lint-node/eslint';

@@ -5,5 +5,6 @@ export default defineConfig({
     watch: false,
     root: "./src",
     mockReset: true,
+    passWithNoTests: true,
   },
 });

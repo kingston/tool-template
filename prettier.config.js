@@ -1,1 +1,1 @@
-export { default } from "@ktam/lint-node/prettier";
+export { default } from '@ktam/lint-node/prettier';
