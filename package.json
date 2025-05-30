@@ -36,7 +36,8 @@
     "prettier:write": "prettier -w .",
     "release": "pnpm build && pnpm changeset publish",
     "start": "node dist/cli.js",
-    "test": "vitest"
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "commander": "^14.0.0"
