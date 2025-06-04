@@ -20,6 +20,7 @@
 - **Always use .js extensions** in import statements, even when importing TypeScript files
 - Example: `import { getSystemInfo } from '@src/system-info.js';`
 - This is required for proper ESM module resolution with TypeScript's `NodeNext` module resolution
+- **Use default import for `node:path` module**: `import path from 'node:path';` instead of named imports
 
 ### Import Organization
 
@@ -76,11 +77,11 @@ Imports must be sorted according to perfectionist rules in this order:
 ### Test Structure
 
 ```typescript
-import { describe, expect, it } from "vitest";
-import { getSystemInfo } from "@src/system-info.js";
+import { describe, expect, it } from 'vitest';
+import { getSystemInfo } from '#src/system-info.js';
 
-describe("getSystemInfo", () => {
-  it("should return a platform", () => {
+describe('getSystemInfo', () => {
+  it('should return a platform', () => {
     const systemInfo = getSystemInfo();
     expect(systemInfo.platform).toBeTruthy();
   });
@@ -94,6 +95,7 @@ describe("getSystemInfo", () => {
 - **Object shorthand**: Always use shorthand syntax for object properties
 - **Template literals**: Prefer template literals over string concatenation
 - **Arrow functions**: Use concise arrow function syntax when possible
+- **Prefer undefined over null**: Use `undefined` over `null` when possible
 
 ### Import Rules
 
@@ -128,3 +130,19 @@ pnpm prettier:write
 # Build package
 pnpm build
 ```
+
+## Changesets
+
+If you are adding a new feature or changing an existing feature, please also add a new Changeset for it in the `.changeset/` directory of the form (keeping things to patch changes for now):
+
+```markdown
+---
+'package-name': patch
+---
+
+Description of the feature or change
+```
+
+## Custom instructions
+
+_You can place custom instructions here for the specific project._

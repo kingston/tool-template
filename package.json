@@ -31,7 +31,7 @@
     "build": "tsc -p tsconfig.build.json",
     "dev": "tsx -C development src/cli.ts",
     "lint": "eslint .",
-    "prettier:check": "prettier --check .",
+    "prettier:check": "prettier .",
     "prettier:write": "prettier -w .",
     "release": "pnpm build && pnpm changeset publish",
     "start": "node dist/cli.js",
