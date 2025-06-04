@@ -3,10 +3,12 @@
 > **Note**: This is a template repository. To adapt this code for your own tool, please:
 >
 > 1. Update this README.md with your tool's description and usage instructions
-> 2. Update `package.json` with your tool's name, description, keywords, and repository URL
-> 3. Uncomment the triggers in `.github/workflows/release.yml` and
-> 4. Add your `NPM_TOKEN` secret to your GitHub repository settings for automated releases
-> 5. Remove this note section once you've customized the template
+> 2. Update `package.json` with your tool's name, description, keywords, repository URL, and author
+> 3. Update the CLI name and description in `src/cli.ts` (lines 10-12)
+> 4. Uncomment the triggers in `.github/workflows/release.yml` and other workflow files
+> 5. Add your `NPM_TOKEN` secret to your GitHub repository settings for automated releases
+> 6. Update the LICENSE file if needed
+> 7. Remove this note section once you've customized the template
 
 ## Description
 

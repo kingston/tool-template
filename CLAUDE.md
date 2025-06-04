@@ -13,6 +13,16 @@
   - `.test.ts` for unit tests
   - Tests should be collocated with source files in the same directory
 
+## Directory structure
+
+- `src/`: Source code
+- `src/cli.ts`: CLI entry point
+- `src/index.ts`: Main entry point
+- `src/types.ts`: Type definitions
+- `src/services/*`: Service files
+- `src/utils/*`: Utility files
+- `src/commands/*`: Files for each command that should be registered with the CLI
+
 ## Import/Export Rules
 
 ### ESM-Style Imports
