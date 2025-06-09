@@ -106,6 +106,7 @@ describe('getSystemInfo', () => {
 - **Template literals**: Prefer template literals over string concatenation
 - **Arrow functions**: Use concise arrow function syntax when possible
 - **Prefer undefined over null**: Use `undefined` over `null` when possible
+- **Use console.info/debug/error/warn/log instead of console.log**: Use the appropriate console method for the type of message you are logging.
 
 ### Import Rules
 
