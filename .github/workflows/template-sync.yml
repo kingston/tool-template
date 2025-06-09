@@ -9,6 +9,7 @@ on:
   workflow_dispatch:
 jobs:
   repo-sync:
+    name: Template Repository Sync
     runs-on: ubuntu-latest
     permissions:
       contents: write
