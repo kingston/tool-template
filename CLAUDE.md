@@ -28,7 +28,7 @@
 ### ESM-Style Imports
 
 - **Always use .js extensions** in import statements, even when importing TypeScript files
-- Example: `import { getSystemInfo } from '@src/system-info.js';`
+- Example: `import { getSystemInfo } from '#src/system-info.js';`
 - This is required for proper ESM module resolution with TypeScript's `NodeNext` module resolution
 - **Use default import for `node:path` module**: `import path from 'node:path';` instead of named imports
 
@@ -39,7 +39,7 @@ Imports must be sorted according to perfectionist rules in this order:
 1. Type imports
 2. Built-in and external value imports
 3. Internal type imports
-4. Internal value imports (using `@src/` pattern)
+4. Internal value imports (using `#src/` pattern)
 5. Relative type imports (parent, sibling, index)
 6. Relative value imports (parent, sibling, index)
 7. Side-effect imports
@@ -107,6 +107,8 @@ describe('getSystemInfo', () => {
 - **Arrow functions**: Use concise arrow function syntax when possible
 - **Prefer undefined over null**: Use `undefined` over `null` when possible
 - **Use console.info/debug/error/warn/log instead of console.log**: Use the appropriate console method for the type of message you are logging.
+- **Prefer `utf8` over `utf-8`**: Use `utf8` over `utf-8` when possible
+- **Use `node:` prefix for imports**: Use `node:` prefix for imports when possible
 
 ### Import Rules
 
